@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exam.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White"
+                       FontSize="36" />
+            </Frame>
+
+        </StackLayout>
+        <Frame VerticalOptions="CenterAndExpand" Margin="24" CornerRadius="0">
+            <StackLayout>
+                <Entry Placeholder="UserName" x:Name="entrusername" />
+                <Entry Placeholder="PassWord" x:Name="entryuserpass" MaxLength="4" IsPassword="True" />
+                <Button Text="Register" Clicked="Button_OnClicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
